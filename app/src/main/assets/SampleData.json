@@ -46,5 +46,29 @@
   {
     "name" : "Scala",
     "desc" : "programming language"
+  },
+  {
+    "name" : "Swift",
+    "desc" : "programming language"
+  },
+  {
+    "name" : "Rust",
+    "desc" : "programming language"
+  },
+  {
+    "name" : "Scala",
+    "desc" : "programming language"
+  },
+  {
+    "name" : "Swift",
+    "desc" : "programming language"
+  },
+  {
+    "name" : "Rust",
+    "desc" : "programming language"
+  },
+  {
+    "name" : "Scala",
+    "desc" : "programming language"
   }
 ]
