@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -82,7 +83,7 @@ fun SampleDataGridItem(data: SampleData, navController: NavController) {
                 val itemVal = Gson().toJson(data)
                 navController.navigate("sample_grid_detail/$itemVal")
             }
-            .padding(10.dp)
+            .padding(5.dp)
             .fillMaxSize(),
         elevation = 5.dp,
         shape = RoundedCornerShape(5.dp)
@@ -90,15 +91,17 @@ fun SampleDataGridItem(data: SampleData, navController: NavController) {
         Column(
             modifier = Modifier.padding(10.dp)
         ) {
-            Image(
-                painterResource(R.drawable.icon),
-                contentDescription = "Image",
-                modifier = Modifier
-                    .width(70.dp)
-                    .height(70.dp)
-                    .padding(5.dp)
-
-            )
+            Column(modifier = Modifier.padding(10.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+                Image(
+                    painterResource(R.drawable.icon),
+                    contentDescription = "Grid Image",
+                    modifier = Modifier
+                        .width(70.dp)
+                        .height(70.dp)
+                        .padding(5.dp)
+                        .clip(RoundedCornerShape(5.dp))
+                )
+            }
 
             Spacer(modifier = Modifier.padding(3.dp))
 
